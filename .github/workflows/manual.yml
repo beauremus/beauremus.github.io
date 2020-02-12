@@ -1,7 +1,7 @@
 name: Manual
 on:
   watch:
-    types: [stared]
+    types: [started]
 
 jobs:
   label:
