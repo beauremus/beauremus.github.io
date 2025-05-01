@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beau Harrison - Favorite Code Snippet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Favorite Code Snippet</h1>
+    </header>
+    <main>
+        <p>
+            <pre><code class="language-ruby">
+                def make_greeter(greeting)
+                    # Returns a function that "remembers" `greeting`
+                    lambda { |name| "#{greeting}, #{name}!" }
+                end
+
+                friendly_greeter = make_greeter("Hey there")
+                # `friendly_greeter` holds onto "Hey there"
+
+                puts friendly_greeter.call("37signals") # => Hey there, Beau!
+            </code></pre>
+        </p>
+        <p>
+            Closures are deceptively simple.
+
+            They are often described as a function wrapping a function, but that's hard for us to really understand until we use them. Even then! I used them in a template-like fashion for many projects before really appreciating their power.
+            
+            Closures offer reusability and flexability in such a nice little package. They are simple and powerful. All of my programming AHA! moments speak to me, but this one stands out.
+        </p>
+    </main>
+</body>
+
+</html>
